@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
+// import Portfolio from "./components/Portfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilm,
@@ -183,7 +183,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <Portfolio />
+      {/* <Portfolio /> */}
       <section
         id="contact"
         className="py-24 text-white text-center"
