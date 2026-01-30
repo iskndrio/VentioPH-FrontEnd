@@ -1,5 +1,5 @@
 import { useState } from "react"
-import logo from "../assets/logo.png"
+import logo from "../assets/ventiologo.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -18,10 +18,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Ventio Production" className="h-30 w-auto" />
-          {/* <div className="text-lg font-bold" style={{ color: '#fdfbf0' }}>
-            Ventio Production
-          </div> */}
+          <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className="flex items-center gap-3">
+            <img src={logo} alt="Ventio Production logo" title="Ventio Production" className="h-15 w-15 md:h-15 md:w-15 object-contain cursor-pointer" />
+            <span className="hidden md:inline-block text-lg font-bold" style={{ color: '#fdfbf0' }}>V E N T I O . P R O D U C T I O N</span>
+          </a>
         </div>
 
         <div className="hidden md:flex gap-8 font-medium" style={{ color: '#fdfbf0', fontFamily: 'Poppins' }}>
