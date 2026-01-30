@@ -10,7 +10,7 @@ export default function Portfolio() {
       category: "Video",
       description: "Professional corporate video for multinational company",
       image: "https://via.placeholder.com/400x300?text=Corporate+Video",
-      videoUrl: "https://youtu.be/aK9nPpESKxI?si=PSN3ItCPkNOzJk7s",
+      videoUrl: "https://www.youtube.com/embed/lTY3ZnFc48c",
     },
     {
       id: 2,

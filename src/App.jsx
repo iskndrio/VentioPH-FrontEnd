@@ -69,7 +69,7 @@ export default function App() {
             WE ARE
           </h2>
           <h2 className="text-6xl font-bold mb-6 text-white">
-            V E N T I O P R O D U C T I O N
+            V E N T I O.P R O D U C T I O N
           </h2>
           <p
             className="text-white max-w-3xl mx-auto"
@@ -183,7 +183,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* <Portfolio /> */}
+      <Portfolio />
       <section
         id="contact"
         className="py-24 text-white text-center"
