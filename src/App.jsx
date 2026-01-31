@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-// import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFilm,
@@ -35,14 +35,15 @@ export default function App() {
 
         <div className="text-center max-w-2xl px-6 relative z-10">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
-            Lorem ipsum dolor sit amet consectetur.
+            Ventio comes from Ventus—the wind.
           </h1>
           <p
             className="text-lg opacity-90 mb-8"
             style={{ fontFamily: "Poppins" }}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
-            dolore numquam.
+            It symbolizes unseen movement, quiet pressure, and change that
+            happens over time. Ventio tells stories that move slowly, speak
+            softly, yet leave a lasting impact.
           </p>
           <a
             href="https://wa.me/"
@@ -183,7 +184,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* <Portfolio /> */}
+      <Portfolio />
       <section
         id="contact"
         className="py-24 text-white text-center"

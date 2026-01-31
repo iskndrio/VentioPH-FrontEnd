@@ -6,49 +6,12 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: "Corporate Video Production",
+      title: "USAI Film",
       category: "Video",
-      description: "Professional corporate video for multinational company",
+      sinopsis: "Professional corporate video for multinational company",
       image: "https://via.placeholder.com/400x300?text=Corporate+Video",
+      thumbnail: "s/thumbnails/usai.jpg", // place your manual thumbnail in public/thumbnails/usai.jpg
       videoUrl: "https://www.youtube.com/embed/lTY3ZnFc48c",
-    },
-    {
-      id: 2,
-      title: "Social Media Campaign",
-      category: "Short Film",
-      description: "Viral campaign video with 5M+ views",
-      image: "https://via.placeholder.com/400x300?text=Social+Media",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    },
-    {
-      id: 3,
-      title: "Product Photography",
-      category: "Photography",
-      description: "High-quality product photography for e-commerce",
-      image: "https://via.placeholder.com/400x300?text=Product+Photo",
-    },
-    {
-      id: 4,
-      title: "Event Coverage",
-      category: "Video",
-      description: "Professional event documentation and editing",
-      image: "https://via.placeholder.com/400x300?text=Event+Coverage",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    },
-    {
-      id: 5,
-      title: "Brand Documentary",
-      category: "Video",
-      description: "Cinematic brand story and company profile",
-      image: "https://via.placeholder.com/400x300?text=Brand+Doc",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    },
-    {
-      id: 6,
-      title: "Fashion Editorial",
-      category: "Photography",
-      description: "Creative fashion photoshoot and styling",
-      image: "https://via.placeholder.com/400x300?text=Fashion+Edit",
     },
   ];
 
@@ -73,7 +36,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="py-24 bg-gray-50">
+    <section id="portfolio" className="py-24" style={{ backgroundColor: "#090f15" }}>
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -82,9 +45,9 @@ export default function Portfolio() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-6">Our Portfolio</h2>
+          <h2 className="text-4xl font-bold mb-6 text-white">Our Portfolio</h2>
           <p
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-white max-w-2xl mx-auto opacity-90"
             style={{ fontFamily: "Poppins" }}
           >
             Explore our latest projects and creative works across various categories
@@ -158,22 +121,22 @@ export default function Portfolio() {
               </div>
               <div className="mt-4">
                 <span
-                  className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-2"
+                  className="inline-block px-3 py-1 bg-blue-800 text-white text-xs font-semibold rounded-full mb-2"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {item.category}
                 </span>
                 <h3
-                  className="text-lg font-semibold text-gray-800 mb-2"
+                  className="text-lg font-semibold text-white mb-2"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {item.title}
                 </h3>
                 <p
-                  className="text-gray-600 text-sm"
+                  className="text-gray-300 text-sm"
                   style={{ fontFamily: "Poppins" }}
                 >
-                  {item.description}
+                  {item.sinopsis}
                 </p>
               </div>
             </motion.div>
